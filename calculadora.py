@@ -33,16 +33,19 @@ while loop == 'y':
                 n1 = ler_numero('Digite o primeiro número: ')
                 n2 = ler_numero('Digite o segundo número: ')
                 print(f'{n1} + {n2} = {n1 + n2}')
+                break
 
             elif operacao == 2:
                 n1 = ler_numero('Digite o primeiro número: ')
                 n2 = ler_numero('Digite o segundo número: ')
                 print(f'{n1} - {n2} = {n1 - n2}')
+                break
 
             elif operacao == 3:
                 n1 = ler_numero('Digite o primeiro número: ')
                 n2 = ler_numero('Digite o segundo número: ')
                 print(f'{n1} * {n2} = {n1 * n2}')
+                break
 
             elif operacao == 4:
                 n1 = ler_numero('Digite o numerador: ')
@@ -51,11 +54,13 @@ while loop == 'y':
                     print('Não é possível dividir por zero!')
                 else:
                     print(f'{n1} ÷ {n2} = {n1 / n2}')
+                break
 
             elif operacao == 5:
                 n1 = ler_numero('Digite a base: ')
                 n2 = ler_numero('Digite o expoente: ')
                 print(f'{n1} elevado à {n2} potência é igual a: {n1 ** n2}')
+                break
 
             elif operacao == 6:
                 while True:
@@ -65,10 +70,11 @@ while loop == 'y':
                     else:
                         print(f'√{n1} = {n1 ** 0.5}')
                         break
-
+                break
             else:
                 print('ERRO! Selecione uma Opção Válida entre 1 e 6!')
-            break
+                
+
         except ValueError:
             print('ERRO! Digite um número inteiro correspondente à operação.')
 
